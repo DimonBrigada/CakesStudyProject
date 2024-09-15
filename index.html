@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Депо</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="first-screen">
+        <div class="container">     
+                <header class="header">
+                        <ul class="header__menu">
+                            <li class="header-menu-item"><a href="pages/sorts.html" class="menu__item">Начинки</a></li>
+                            <li class="header-menu-item"><a href="pages/catalog.html" class="menu__item">Каталог</a></li>
+                            <li class="header-menu-item"><a href="pages/price.html" class="menu__item">Цены</a></li>
+                            <li class="header-menu-item"><a href="pages/contacts.html" class="menu__item">Контакты</a></li>
+                        </ul>
+                    <a class="link-main-page" href="index.html"><h1>Cakes for You</h1></a>
+                    <div class="contacts">
+                        <img class="telf" src="img/Vector1.png" alt="Телефон">
+                        <span class="numder">8-800-555-35-35</span>
+                        <button class="feedback" data-modal-btn="my_modal" type="button">Заказать торт</button>
+                    </div>
+                </header>
+        </div>
+    </section>
+    <section class="main-block">
+        <div class="container">
+            <div class="banner">
+                <div class="wrapper">
+                    <h2 class="title-main">ТОРТЫ НА ЗАКАЗ ЛЮБОЙ СЛОЖНОСТИ</h2>
+                    <p class="proposal">Хотите узнать, свободна ли дата? Заполните форму, и мы вам перезвоним.</p>
+                    <button class="feedback" type="button">Заказать торт</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vantages">
+        <div class="container">
+            <h3 class="header-advantages">Наши преимущества</h3>
+            <div class="advantages">
+                <div class="advantages-item">
+                    <img src="img/vector.svg" alt="" class="vector1">
+                    <h5 class="item-header">100% качество</h5>
+                    <p class="item-paragraph">Используем только натуральные, дорогие и проверенные продукты высокого качества известных производителей  </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="img/free-icon-delivery-courier-2871407 1.svg" alt="" class="vector1">
+                    <h5 class="item-header">Доставка по Самаре</h5>
+                    <p class="item-paragraph">Если Вам нужна доставка - привезем торт в пределах Самары по указанному адресу от 400 р. Доставка многоярусных тортов - 600 р.</p>
+                </div>
+                <div class="advantages-item"> 
+                    <img src="img/free-icon-hourglass-87192 1.svg" alt="" class="vector1">
+                    <h5 class="item-header">Срочные заказы</h5>
+                    <p class="item-paragraph">Возможны срочные заказы за 2 дня с доплатой за срочность (при условии отсутствия текущих заказов)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cakes-banner">
+        <h2 class="cakes-banner-title">Любые сладкие мечты осуществимы!</h2>
+    </div>
+    <section class="last-works">
+        <div class="container">
+            <h3 class="header-advantages">Последние работы</h3>
+            <div class="last-works-content">
+                <div class="item item-1"></div>
+                <div class="item item-2"></div>
+                <div class="item item-3"></div>
+                <div class="item item-4"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer_items">
+                <li class="footer-item">© 2021, «Cakes for You »</li>
+                <li class="footer-item">Авторские торты на заказ в Самаре</li>
+                <li class="footer-item">Ежедневно с 10:00 до 17:00<br/>Тел. 8-800-555-35-35</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="popup" data-modal-window="my_modal" id="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="" class="popup-close">X</a>
+                <form action="mail.php" method="post">
+                    <input type="text" name="Name" placeholder="You name..." required/><br>
+                    <input type="text" name="E-mail" placeholder="You E-mail..." required/><br>
+                    <input type="text" name="Phone" placeholder="You phone..."/><br>
+                    <input type="submit" value="Отправить"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,696 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+.menu__item{
+    text-decoration: none;
+    color:#000;
+    margin-right: 23px;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    position:relative;
+}
+.link-main-page, .link-main-page:active, .link-main-page:focus, .link-main-page:visited{
+    text-decoration: none;
+    color: #000;
+}
+.menu__item:hover{
+    color:#FF5050;
+}
+.icon{
+    display: none;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    font-family: "Courgette", sans-serif;
+    font-size: 60px;
+    width: 400px;
+    letter-spacing: 10px;
+    text-align: center;
+    -webkit-transition: transform 0.2s ease;
+    -khtml-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+    -ms-transition: transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+}
+h1:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.telf{
+    margin-right: 14px;
+    width: 21px;
+    height: 21px;
+}
+.numder{
+    font-family: "Noto Sans";
+    font-weight: bold;
+    margin-right: 21px;
+}
+.feedback{
+    background: #FF5050;
+    border: 1px solid rgba(36, 49, 58, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px #E53F5A;
+    border-radius: 8px;
+    color:#fff;
+    width: 143px;
+    height: 32px;
+    font-family: "Noto Sans";
+    font-size: 18px;
+}
+.feedback:hover{
+    cursor: pointer;
+}
+
+.line{
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+}
+
+.banner{
+    background-image: url('../img/mainImg.jpg');
+    background-size: cover;
+    height: 611px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner::after{
+    position: absolute;
+    content:'*только натуральные ингредиенты';
+    right: 20px;
+    bottom: 50px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px; 
+    letter-spacing: 1px;
+}
+.wrapper{
+    top: 113px;
+    position: relative;
+    left: 100px;
+    width: 500px;
+}
+.title-main{
+    max-width:465px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 36px;
+}
+.proposal{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px; 
+    max-width:300px;
+}
+.header-advantages{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 44px;  
+    letter-spacing: 0.055em;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+}
+.header-advantages::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 3px;
+    background-color: #FF5050;
+    right: 0;
+    margin: 0 auto;
+  }
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.advantages-item{
+    text-align: center;
+    
+}
+.vector1{
+    height: 174px;
+}
+.item-header{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.055em;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.item-paragraph{
+    width: 270px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.cakes-banner{
+    background-image: url('../img/fon2.jpg');
+    background-size: cover;
+    height: 510px;
+    background-repeat: no-repeat;
+}
+.cakes-banner-title{
+    max-width:465px;
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 119.04%;
+    text-align: right;
+    letter-spacing: 0.105em;
+    margin: 160px 50px 0px 0px;
+    float: right;
+}
+.last-works-content{
+    background-color: #D8E2EC;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: 1170px;
+    height: 503px;
+    padding: 10px;
+}
+.item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-1{
+    background-image:url('../img/Cake1.jpg') ;
+    max-width: 100%;
+    max-height: 483px;
+}
+
+.item-2{
+    background-image:url('../img/Cake2.jpg') ;
+    max-width: 100%;
+    max-height: 261px;
+}
+.item-3{
+    background-image:url('../img/Cake3.jpg') ;
+    max-width: 100%;
+    max-height: 261px;
+}
+.item-4{
+    background-image:url('../img/Cake4.jpg') ;
+    max-width: 100%;
+    max-height: 236px;
+}
+    .item-1 { grid-area: 1 / 1 / 3 / 3; }
+    .item-2 { grid-area: 1 / 3 / 2 / 4; }
+    .item-3 { grid-area: 1 / 4 / 2 / 5; }
+    .item-4 { grid-area: 2 / 3 / 3 / 5; }
+
+.footer{
+    margin-top: 55px;
+    background-color:#F2E4F9;
+}
+
+.footer_items{
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: 115px;
+}
+
+.footer-item{
+    text-decoration: none;
+    color:#000;
+    margin-right: 23px;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    position:relative;
+}
+.footer-item:last-child{
+margin-right: 0;
+}
+
+.banner-sorts{
+    background-image: url('../img/pexels-david-jakab-959079\ 1.png');
+    background-size: cover;
+    height: 315px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+}
+.banner-sorts::after{
+    display: none;
+}
+.wrapper-sorts{
+    top: 34px;
+    position: relative;
+    float: right;
+}
+.sorts{
+    margin-top: 50px;
+}
+.name-sort{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FF5050;
+}
+.description-sort{
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.055em;
+}
+.img-sort{
+    background-image: url('../img/Sort.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.banner-catalog{
+    background-image: url('../img/catalogFon.png');
+    background-size: cover;
+    height: 315px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+}
+.banner-catalog::after{
+    display: none;
+}
+.wrapper-catalog{
+    top: 55px;
+}
+
+.categories-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    margin-top: 55px;
+}
+.item-category{
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: #FFCDCD;
+    color:#000;
+    font-family: "Noto Sans";
+    font-size: 13px;
+}
+
+.item-category.active{
+    background-color: #FF5050;
+    color: #fff;
+}
+
+.card-cake{
+    background-color: #B4EEEE;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.row-catalog{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.card-title{
+    color:#000;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 15px 0;
+}
+.card-cake .feedback{
+    margin-bottom: 15px;
+}
+
+.price-description{
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.price-block{
+    border: 2px solid #FF5050;
+}
+.delivery{
+    border: 2px solid #B4EEEE;
+}
+
+.contacts-description{
+    font-family: "Montserrat";
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 500;
+}
+.map{
+    text-align: center;
+    width: 100%;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.55);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+.popup-body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup-content{
+    background-color: #fff;
+    max-width:800px;
+    padding: 40px;
+    position: relative;
+}
+.popup-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#000;
+}
+
+
+
+
+
+
+
+@media(max-width: 1200px){
+    h1{
+        font-size: 40px;
+        width: 260px;
+    }
+    .container{
+        padding: 0 35px;
+    }
+    .title-main{
+        font-size: 26px;
+    }
+    .proposal{
+        font-size: 16px;
+    }
+    .banner{
+        background-image: url('../img/biscuit-cake-with-chocolate-drips1.png');
+        height: 411px;
+    }
+    .banner::after{
+        display: none;
+    }
+    .banner-sorts{
+        background-image: url('../img/pexels-david-jakab-959079\ 1.png');
+        height: 310px;
+    }
+    .banner-catalog{
+        background-image: url('../img/catalogFon.png');
+        background-size: cover;
+        height: 315px;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 20px;
+    }
+    .card-cake{
+        margin: 5px 5px;
+    }
+    .card-cake-img{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 992px){
+   
+    a.link-main-page{
+        order: -1;
+    }
+    h1{
+        font-size: 26px;
+        width: auto;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .contacts{
+        margin: 0 auto;
+    }
+    .header__menu{
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .wrapper{
+        top: 100px;
+        left: 60px;
+        width: 400px;
+    }
+    .advantages{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cakes-banner-title{
+        font-size: 34px;
+    }
+    .card-cake{
+        width: 30%;
+    }
+    .categories-menu{
+        margin-top: 25px;
+    }
+
+}
+@media (max-width:776px){
+    .contacts .feedback{
+        display: none;
+    }
+    .wrapper{
+        top: 27px;
+        left: 32px;
+        width: 300px;
+    }
+    .wrapper-sorts{
+        left: 0;
+    }
+    .title-main{
+        font-size: 20px;
+    }
+    .banner{
+        max-height: 211px;
+        background-position: center;
+    }
+    .proposal{
+        font-size: 14px;
+    }
+    .advantages{
+        flex-direction: column;
+    }
+    .item-header{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .header-advantages{
+        margin:30px 0;
+    }
+    .item-paragraph{
+        width: auto;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    .cakes-banner{
+       height: 310px;
+    }
+    .cakes-banner-title{
+        margin:110px 50px 0px 0px;;
+    }
+    .last-works-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        }
+    .item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+    .item-1 { grid-area: 1 / 1 / 4 / 3;  }
+    .item-2 { grid-area: 4 / 1 / 6 / 2; }
+    .item-3 { grid-area: 6 / 1 / 8 / 3; }
+    .item-4 { grid-area: 4 / 2 / 6 / 3; }
+
+    .footer_items{
+        padding: 10px 0;
+        flex-direction: column;
+    }
+    .img-sort{
+        height: 280px;
+    }
+    .categories-menu{
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .card-cake{
+        width: 100%;
+    }
+    .item-category{
+        margin-bottom: 5px;
+    }
+    .map-ya{
+        width: 100%;
+    }
+}
+@media(max-width: 390px){
+   
+    h1{
+        font-size: 26px;
+        width: auto;
+        order: -1;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .contacts{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .header__menu{
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .telf{
+        display: none;
+    }
+    .numder{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .wrapper{
+        width: 242px;
+    }
+    .header-advantages{
+        margin: 25px auto;
+        font-size: 24px;
+        line-height: 24px; 
+    }
+    .header-advantages::after{
+        bottom:-7px;
+        width: 120px;
+
+    }
+    .cakes-banner-title{
+        font-size: 30px;
+    }
+    .last-works-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        }
+    .item-1 { grid-area: 1 / 1 / 4 / 3; }
+    .item-2 { grid-area: 6 / 1 / 8 / 3; }
+    .item-3 { grid-area: 4 / 1 / 6 / 3; }
+    .item-4 { grid-area: 8 / 1 / 10 / 3; }
+    .img-sort{
+        height: 200px;
+    }
+    .categories-menu{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .item-category{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 360px){
+   
+    h1{
+        font-size: 26px;
+        width: auto;
+        order: -1;
+        letter-spacing: 2.5px;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .contacts{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .header__menu{
+        margin: 0 auto;
+        padding: 15px 0;
+        flex-direction: column;
+    }
+    .numder{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .menu__item{
+        margin: 0;
+    }
+    .header-menu-item:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .proposal{
+        width: 200px;
+       }
+    .title-main{
+        font-size: 18px;
+    }
+}
+
